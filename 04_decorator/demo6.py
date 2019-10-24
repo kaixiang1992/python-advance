@@ -71,6 +71,7 @@ def article_list():
 
 @app.route('/edit')
 @login_require
+# TODO: app.route('/edit')(login_require(edit_user))()
 # TODO: 先执行@login_require，再执行@app.route('/edit')，从内到外执行
 # TODO: 相当于执行：
 # TODO: 1. login_require(edit_user)经@wraps(func)包装后 => 返回 edit_user

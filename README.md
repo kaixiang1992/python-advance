@@ -27,3 +27,6 @@ python高级学习
     * 06_memory `Python内存管理`
         *   demo1.py `126.【Python内存管理】引用计数和循环引用(1) 2019/10/24 22:38`
         *   demo2.py `127.【Python内存管理】标记清除和分代回收 2019/10/24 23:43`
+        *   demo3.py `128.【Python内存管理】gc模块 2019/10/28 22:13`
+    * 07_magic_method `Python魔术方法 -- 重点`
+        *   demo1.py `128.【Python魔术方法】常规魔术方法 2019/10/28 23:50`

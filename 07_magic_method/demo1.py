@@ -18,12 +18,17 @@ __repr__魔术方法：
 在pycharm中，如果将一个对象创建完成后，放到一个列表中，然后再打印这个列表，
 那么会打印这个列表中所有的对象，这时候会调用__repr__魔术方法
 例：[Person(zhiliao), Person(ketang)]
+
+__dict__魔术属性：
+这个属性装的是所有用户自定义的属性。
 """
 
 
 class Person(object):
-    def __init__(self, name):
+    def __init__(self, name, age):
         self.name = name
+        self.age = age
+        self.country = 'china'
 
     """
     Person<zhiliao>
@@ -41,8 +46,8 @@ class Person(object):
         return "Person(%s)" % self.name
 
 
-p1 = Person('zhiliao')
-p2 = Person('ketang')
+p1 = Person('zhiliao', 18)
+p2 = Person('ketang', 18)
 rst = p1
 a = [p1, p2]
 
@@ -50,3 +55,8 @@ print(p1)
 print(p2)
 print(str(rst))
 print(a)
+print('__dict__魔术属性：')
+# {'name': 'zhiliao', 'age': 18, 'country': 'china'}
+print(p1.__dict__)
+print('dir函数:')
+print(dir(p1))

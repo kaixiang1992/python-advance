@@ -9,7 +9,6 @@ from urllib import request
 import os
 import re
 from queue import Queue
-import time
 
 
 class Producer(threading.Thread):

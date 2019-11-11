@@ -335,6 +335,6 @@ URL的规则是前面是http或者https或者是ftp
 三位整数限制为：100
 """
 
-text = '1'
-ret = re.match('[1-9]', text)
+text = '100'
+ret = re.match('[1-9]\d?$|100$', text)
 print(ret.group())
